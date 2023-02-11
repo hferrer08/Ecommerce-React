@@ -35,7 +35,7 @@ function ItemListContainer(){
     },[idCategoria])
 
     return (
-        <div class="row">
+        <div >
                 
         {loading ? <Spinner></Spinner> :  <ItemList productos={data} />}
  

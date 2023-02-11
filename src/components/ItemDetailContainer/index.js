@@ -36,7 +36,7 @@ function ItemDetailContainer(){
   
 
     return (
-        <div>
+        <div className= "row">
                
         {loading ? <Spinner></Spinner> :  <ItemDetails {...data} />}
     

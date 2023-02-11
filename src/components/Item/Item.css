@@ -1,3 +1,9 @@
 .CustomImageCard{
     width: 18rem;
+    height: 20rem;
+}
+
+.bordesRedondeados{
+    border: solid 1px grey;
+    border-radius: 20%;
 }

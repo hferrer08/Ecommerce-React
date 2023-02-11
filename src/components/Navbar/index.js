@@ -5,13 +5,13 @@ import {Link} from 'react-router-dom'
 function Navbar(){
     return (
    
-        <div className="container-fluid bg-dark">
-            <div className="container bg-dark">
+       
+            <div className="container-fluid bg-dark">
             
-            <nav className="navbar navbar-expand-lg bg-dark">
-  <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg bg-secondary">
+ 
   <Cartwidget /> 
-  <Link to='/' className="navbar-brand" href="#">HF-Videojuegos</Link>
+  <Link to='/' className="navbar-brand h1 text-dark" href="#">HF-Videojuegos</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon">  </span>
     </button>
@@ -21,7 +21,7 @@ function Navbar(){
           <Link to='/' className="nav-link active text-light" aria-current="page" href="#">Inicio</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <Link className="nav-link dropdown-toggle text-white" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Figuras y juguetes
                     </Link>
         </li>
@@ -31,18 +31,18 @@ function Navbar(){
           </a>
           <ul className="dropdown-menu">
             <li><Link className="nav-link" to='/categoria/ps4'>PS4</Link></li>
-            <li><a className="dropdown-item" href="#">Xbox Series</a></li>
+    
             <li><Link className="nav-link" to='/categoria/switch'>Nintendo switch</Link></li>
           </ul>
         </li>
       </ul>
     </div>
-  </div>
+  
 </nav>
             </div>
 
 
-        </div>
+        
     )
 
 }

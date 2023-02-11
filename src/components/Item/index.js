@@ -7,24 +7,25 @@ function Item({ id, image, name, precio }){
     
     return (
 
-
-    
-        <div className = "card col-md-4 bg-dark">
-            <img src={image} class="card-img-top CustomImageCard" alt="..."></img>
-            <div className="card-body">
-            <h5 className="text-muted"> {name} </h5>
-             <p className="text-white"> ID: {id} </p>
-             <p className="text-white card-text">Precio: {precio} </p>
-
-             <Link to={`/detalle/${id}`}> <button className="btn btn-outline-primary"> Ver Detalles </button> </Link>
+        
+        <div className="col-3 ">
+          <div className="card  m-2  text-white bg-secondary">
+            <div className="card-image">
+              <img src={image} className="CustomImageCard" />
+              
             </div>
-            
-             
-            
-             
-            
-            
+            <div className="card-content">
+            <h3 className="card-title text-dark no-wrap">{name}</h3>
+              <p>Id Producto: {id}</p>
+              <p>Precio: {precio} </p>
+            </div>
+            <div className="card-action">
+            <Link to={`/detalle/${id}`}> <button className="btn btn-outline-primary"> Ver Detalles </button> </Link>
+            </div>
+          </div>
         </div>
+    
+    
         
 
     
