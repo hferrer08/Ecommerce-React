@@ -17,7 +17,7 @@ export default function ItemDetails({nombre, imagenGrandeDetalle, id, precio}){
               
             </div>
             <div className="card-content">
-            <h3 className="card-title text-dark no-wrap">{nombre}</h3>
+            <h3 className="card-title text-dark no-wrap customCardName">{nombre}</h3>
               <p>Id Producto: {id}</p>
               <p>Precio: {precio} </p>
             </div>

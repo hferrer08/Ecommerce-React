@@ -7,3 +7,7 @@
     border: solid 1px grey;
     border-radius: 20%;
 }
+
+.customCardName{
+    font-weight: bolder;
+}
