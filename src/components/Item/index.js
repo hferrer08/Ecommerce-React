@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from 'react-router-dom'
 import './Item.css'
 
-function Item({ id, image, name, precio }){
+function Item({ id, image, name, price }){
     
     
     return (
@@ -15,9 +15,9 @@ function Item({ id, image, name, precio }){
               
             </div>
             <div className="card-content">
-            <h3 className="card-title text-dark no-wrap">{name}</h3>
+            <h3 className="card-title text-dark no-wrap customCardName">{name}</h3>
               <p>Id Producto: {id}</p>
-              <p>Precio: {precio} </p>
+              <p>price: {price} </p>
             </div>
             <div className="card-action">
             <Link to={`/detalle/${id}`}> <button className="btn btn-outline-primary"> Ver Detalles </button> </Link>

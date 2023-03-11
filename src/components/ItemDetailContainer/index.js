@@ -2,6 +2,7 @@ import {React, useContext} from "react";
 import {useEffect, useState} from 'react';
 import {traerDatosPorIdProducto} from "../../data/data";
 
+
 import Spinner from "../Spinner";
 import ItemDetails from "../ItemDetails";
 import {useParams} from 'react-router-dom'
@@ -38,8 +39,8 @@ function ItemDetailContainer(){
     return (
         <div className= "row">
                
-        {loading ? <Spinner></Spinner> :  <ItemDetails {...data} />}
-    
+        {loading ? <Spinner></Spinner> :  <ItemDetails data={data} />}
+        
         </div>
         
     )
