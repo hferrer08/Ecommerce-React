@@ -23,6 +23,8 @@ https://materializecss.com/
 
 -Firebase: Para el almacenamiento de los artículos y con un addDoc hacer la creación de ordenes.
 
+https://firebase.google.com/
+
 ### Vídeo del funcionamiento
 
 Guardo un vídeo en este repositorios para que se vea el funcionamiento descrito anteriormente.
