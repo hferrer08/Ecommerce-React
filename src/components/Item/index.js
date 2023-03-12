@@ -16,11 +16,11 @@ function Item({ id, image, name, price }){
             </div>
             <div className="card-content">
             <h3 className="card-title text-dark no-wrap customCardName">{name}</h3>
-              <p>Id Producto: {id}</p>
+             
               <p>price: {price} </p>
             </div>
             <div className="card-action">
-            <Link to={`/detalle/${id}`}> <button className="btn btn-outline-primary"> Ver Detalles </button> </Link>
+            <Link to={`/detalle/${id}`}> <button className="btn btn-outline-primary"> <i class="bi bi-search"></i> Ver Detalles </button> </Link>
             </div>
           </div>
         </div>

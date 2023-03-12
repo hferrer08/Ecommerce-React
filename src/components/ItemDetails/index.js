@@ -32,11 +32,12 @@ export default function ItemDetails({data}){
             </div>
             <div className="card-content">
             <h3 className="card-title text-dark no-wrap customCardName">{data.nombre}</h3>
-              <p>Id Producto: {data.id}</p>
+            <p> {data.desc}</p>
+             
               <p>price: {data.price} </p>
               <p>Stock: {data.stock} </p>
 
-              {goToCart? <Link to='/cart'>Terminar compra</Link>
+              {goToCart? <Link className='text-TerminarCompras' to='/cart'> Terminar compra</Link>
               :
               <ItemCount initial={0} stock={data.stock} onAdd={onAdd} />
             }
