@@ -11,9 +11,15 @@ El carrito en el navbar se actualiza dinámicamente con los artículos que se va
 
 -sweetAlert2: esta librería se uso para crear un alert más estético y poder brindarle el id de firebase de la orden al cliente al enviar sus datos.
 
+https://sweetalert2.github.io/
+
 -Bootstrap: para el css de los componentes.
 
+https://getbootstrap.com/
+
 -Materialize: se uso para las card de los artículos.
+
+https://materializecss.com/
 
 ### Vídeo del funcionamiento
 
