@@ -15,3 +15,7 @@ El carrito en el navbar se actualiza dinámicamente con los artículos que se va
 
 -Materialize: se uso para las card de los artículos.
 
+### Vídeo del funcionamiento
+
+Guardo un vídeo en este repositorios para que se vea el funcionamiento descrito anteriormente.
+
