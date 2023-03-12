@@ -53,6 +53,8 @@ const [orderID, setOrderID] = useState("");
     const db=getFirestore();
   const docRef = await addDoc(collection(db,"orders"),{
 values, 
+items: cart.map(product=>({id:product.id, nombre: product.nombre, desc: product.desc, price: product.price, quantity: product.quantity})),
+total: totalPrice(),
   });
 console.log("Document ID: ",docRef.id)
 Swal.fire(
