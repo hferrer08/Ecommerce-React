@@ -26,6 +26,7 @@ export default function ItemDetails({data}){
         <div className="col-8 ">
           <div className="card  m-2  text-white bg-secondary">
             <div className="card-image">
+            {console.log(data.imagenGrandeDetalle)}
               <img src={data.imagenGrandeDetalle} className="CustomImageDetail" ></img>
               
             </div>

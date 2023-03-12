@@ -1,3 +1,5 @@
+/*
+Se comenta puesto que se reemplaza por base de datos en firebase
 const data=[{
         
     nombre: "God of war 4",
@@ -131,53 +133,69 @@ const data=[{
     initial: 1,
     imagenGrandeDetalle: "https://d.newsweek.com/en/full/2149851/pokemon-scarlet-violet.jpg?w=1600&h=1200&q=88&f=973003b9e8da3e98b1c61704fd11b723"
 }
-]
+] */
 
+//import {getFirestore, doc, getDoc, collection, getDocs, query, where} from 'firebase/firestore'
+//const traerDatos = new Promise((resolve, reject) => {
+//let condition = true
+//if(condition){
+//setTimeout(() =>{
 
-const traerDatos = new Promise((resolve, reject) => {
-let condition = true
-if(condition){
-setTimeout(() =>{
+//resolve(data)
 
-resolve(data)
+//},2000)
+//}else{
+  //  reject (console.log("No hay datos"))
+//}
 
-},2000)
-}else{
-    reject (console.log("No hay datos"))
-}
-
-
-
-}) 
-
-export default traerDatos
-
-export const traerDatosPorCategoria = (idCategoria) => {
-return new Promise((resolve,reject) => {
-
-setTimeout(() =>{
-
-resolve(data.filter(prod => prod.categoria == idCategoria))
-
-},2000)
-
-
-})
-
-}
+  //  const querydb = getFirestore();
+ //   const queryCollection = collection(querydb, 'products');
+  //  getDocs(queryCollection)
 
 
 
-export const traerDatosPorIdProducto = (idProducto) => {
-return new Promise((resolve,reject) => {
 
-setTimeout(() =>{
+//}) 
+
+//export default traerDatos 
+
+
+
+//export const traerDatosPorCategoria = (idCategoria) => {
+//return new Promise((resolve,reject) => {
+
+//const querydb = getFirestore();
+//const queryCollection = collection(querydb, 'products');
+//const queryFilter = query(queryCollection, where('categoria','==',idCategoria))
+//getDocs(queryCollection)
+
+//setTimeout(() =>{
+
+//resolve(data.filter(prod => prod.categoria == idCategoria))
+
+//},2000)
+
+
+//})
+
+//} 
+
+
+
+//export const traerDatosPorIdProducto = (idProducto) => {
+//return new Promise((resolve,reject) => {
+
+//setTimeout(() =>{
     
-resolve( data.find(prod=> prod.id == idProducto))
+/* Se comenta porque se reemplazara por función de firebase 
+resolve( data.find(prod=> prod.id == idProducto)) */
+//const querydb = getFirestore();
+//const queryDoc = doc(querydb, 'products','0HcL7Upfw97LKPlE5ZcJ')
+//getDoc(queryDoc)
 
 
-},2500)
+//},2500)
 
-})
+//})
 
-}
+//}

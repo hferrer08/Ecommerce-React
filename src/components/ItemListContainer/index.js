@@ -4,7 +4,8 @@ import traerDatos from "../../data/data";
 import Spinner from "../Spinner";
 import ItemList from "../ItemList";
 import {useParams} from 'react-router-dom'
-import {traerDatosPorCategoria} from "../../data/data";
+import {getFirestore, doc, getDoc, collection, getDocs, query, where} from 'firebase/firestore'
+//import {traerDatosPorCategoria} from "../../data/data";
 
 
 function ItemListContainer(){
@@ -16,14 +17,20 @@ function ItemListContainer(){
     useEffect(()=>{
       
       if(!idCategoria){
-        traerDatos
-        .then((resp)=>setData(resp))
+        const querydb = getFirestore();
+  const queryCollection = collection(querydb, 'products');
+   getDocs(queryCollection)
+
+        .then((resp)=>setData(resp.docs.map(product=> ({id: product.id, ...product.data()}))))
         .catch(err=>console.log(err))
         .finally(()=>setLoading(false))   
       }else{
 
-        traerDatosPorCategoria(idCategoria)
-        .then((resp)=>setData(resp))
+        const querydb = getFirestore();
+const queryCollection = collection(querydb, 'products');
+const queryFilter = query(queryCollection, where('categoria','==',idCategoria))
+getDocs(queryFilter)
+        .then((resp)=>setData(resp.docs.map(product=>({id: product.id, ...product.data()}))))
         .catch(err=>console.log(err))
         .finally(()=>setLoading(false)) 
       }
